@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//WebContent/admin.jsp=UTF-8
+encoding//WebContent/footer.jsp=UTF-8
+encoding//WebContent/login.jsp=UTF-8
+encoding//WebContent/manage-users.jsp=UTF-8
+encoding//src/main/java/com/bkap/client/AddDonationPlace.java=UTF-8
+encoding//src/main/java/com/bkap/client/AddHistory.java=UTF-8
+encoding//src/main/java/com/bkap/client/AddNews.java=UTF-8
+encoding//src/main/java/com/bkap/client/AddUser.java=UTF-8
+encoding//src/main/java/com/bkap/client/Admin.java=UTF-8
+encoding//src/main/java/com/bkap/client/Login.java=UTF-8
+encoding//src/main/java/com/bkap/client/ManageHistories.java=UTF-8
+encoding//src/main/java/com/bkap/client/ManageNews.java=UTF-8
+encoding//src/main/java/com/bkap/client/ManagePlaces.java=UTF-8
+encoding//src/main/java/com/bkap/client/ManageUsers.java=UTF-8

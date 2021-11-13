@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterDonate_Activity"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt lịch"
+            android:fontFamily="@font/baloo"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:background="#D61010"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày hiến máu:"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/formNgayDatLich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:inputType="none"
+                android:textSize="16dp"
+                android:hint="Chọn ngày đặt lịch"
+                android:onClick="openDatePicker"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Chọn địa điểm:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:id="@+id/spnPlace"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:background="#FF9800"
+                android:text="Bạn vui lòng trả lời các câu hỏi dưới đây"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Để đảm bảo an toàn sức khỏe cho bạn và người bệnh nhận máu, xin quí vị hãy trả lời trung thực và chính xác. Nếu có bất cứ nghi ngờ nào về nguy cơ mắc bệnh lây truyền, xin quí vị hãy không hiến máu!!!"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#E69898">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Có            Không"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radTungHienMau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1)"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trước đây bạn đã từng hiến máu chưa?"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/frmCoTung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmChuaTung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radTungMacBenh"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2)    "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bạn đã từng mắc các bệnh như: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="thần kinh, hô hấp, vàng da/viêm gan, tim mạch, huyết áp thấp/cao, bệnh thận, ho kéo dài, bệnh máu, lao, ung thư,v..v?"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/frmTungMac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoMac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#E69898">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3)    "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trong vòng 6 tháng gần đây, bạn có:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radSutCan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sút cân >=4kg không rõ nguyên nhân?, Nổi hạch kéo dài?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoSut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoSut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radPhauThuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Phẫu thuật"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoPhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoPhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radXam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Xăm hình, xỏ lỗ tai, lỗ mũi, châm cứu?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoXam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoXam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radTruyenMau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Được truyền máu, chế phẩm máu?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoTruyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoTruyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radMaTuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Sử dụng ma túy, tiêm chích?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoTiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoTiem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radQHTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Quan hệ tình dục với người nhiễm hoặc có nguy cơ lây nhiễm HIV, viêm gan?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoQHTD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmkoQHTD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radDongGioi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Quan hệ tình dục với người cùng giới?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoQH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoQH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radVaccine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Tiêm vác xin phòng bệnh?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmRoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmChua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radVungDich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:text="Có đến/ ở vùng có dịch lưu hành(sốt xuất huyết, sốt rét,Ebola,Covid 19,...?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#E69898">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4)    "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trong vòng 1 tuần gần đây, bạn có:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/radHoCum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Bị cúm, ho, nhức đầu, sốt?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoBi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoBi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radThuoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Dùng thuốc kháng sinh, Aspirin, Corticoid?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radKhamBenh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Đi khám sức khỏe, làm xét nghiệm, chữa răng?"
+                android:textSize="15dp"/>
+            <RadioButton
+                android:id="@+id/frmCoKham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoKham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radTanTat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5)    "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="90dp"
+                android:text="Bạn hiện là đối tượng tàn tật hoặc hưởng trợ cấp tàn tật hoặc là nạn nhân chất độc màu da cam không?   "
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/frmKhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmCo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radMangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6)    "
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Câu hỏi dành cho phụ nữ: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chị hiện có thai hoặc nuôi con dưới 12 tháng tuổi?"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/frmCoThai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Có" />
+
+            <RadioButton
+                android:id="@+id/frmKoMangThai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không" />
+
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/design_button"
+            android:text="Đăng kí"
+            android:textStyle="bold"
+            android:onClick="Book"/>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

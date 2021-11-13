@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_Activity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên hệ"
+        android:fontFamily="@font/baloo"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:background="#D61010"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Viện Huyết học - Truyền máu Trung ương"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: Phố Phạm Văn Bạch, Cầu Giấy, Hà Nội"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: hienmau@nihbt.org.vn "
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lịch hiến máu tình nguyện: 8h-20h tất cả các ngày"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ tư vấn hiến máu: 0976 990 066"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ tổ chức hiến máu theo cơ quan: (024) 3868 6008"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ hiến tiếu cầu: (024) 3782 1898"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Các điểm hiến máu cố định tại Hà Nội"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8h-12h và 13h30-17h từ thứ 2 đến thứ 7."
+        android:layout_marginLeft="35dp"
+        android:textSize="14dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qúi vị vui lòng đến trước giờ kết thúc 45 phút để đăng kí và kiểm tra sức khỏe trước hiến máu."
+        android:layout_marginLeft="35dp"
+        android:textSize="14dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26 Lương Ngọc Quyến - Hoàn Kiếm - HN. Điện thoại: (024) 3718 3154. "
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="132 Quan Nhân - Thanh Xuân - HN. Điện thoại: (024) 3207 9699. "
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u25CF"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số 10,ngõ 122 đường Láng - Đống Đa - HN. Điện thoại: (024) 3203 0032. "
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

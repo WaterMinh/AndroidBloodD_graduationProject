@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionAnswer_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/img_qa"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hỏi đáp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Ai có thể hiến máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người khỏe mạnh, hoàn toàn tự nguyện hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuổi: từ 18 - 60."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cân nặng: >= 42kg với nữ và >= 45kg với nam. Lượng máu hiến mỗi lần không quá 9ml/kg cân nặng. "
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Huyết sắc tố: >= 120g/l "
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Không bị nhiễm hoặc không có các hành vi lây nhiễm HIV và bệnh lây nhiễm qua đường truyền máu khác (vi rút viêm gan B, vi rút viêm gan C, giang mai,...). "
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đã hiến máu trước đó lần gần nhất 12 tuần hoặc hiến thành phần máu lần gần nhất trước đó 3 tuần."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phụ nữ không có thai hoặc nuôi con nhở dưới 1 tuổi"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Ai không nên hiến máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vừa uống rượu, bia."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Có các bệnh mãn tính: Tim mạch, huyết áp, hô hấp, dj dày, thần kinh, tâm thần, nội tiết."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đang mắc các bệnh cấp tính."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đã nhiễm HIV, viêm gan B,C và các bệnh truyền qua đường máu khác trong 12 tháng gần đây."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nghiện ma túy"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Có quan hệ tình dục không an toàn với nhiều người."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Tại sao khi tham gia hiến máu lại cần phải có giấy tờ tùy thân?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mỗi đơn vị máu đều phỉ có hồ sơ, trong đó có các thông tin về người hiến máu. Theo quy định, đây là thủ tục cần thiết trong quy trình hiến máu để đảm bảo tính xác thực thông tin về người hiến máu."
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Quy trình hiến máu"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng kí hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khám và tư vấn sức khỏe."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xét nghiệm trước hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nghỉ sau hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhận giấy chứng nhận hiến máu tình nguyện và các quyền lợi khác."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Cần lưu ý gì trước khi hiến máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đêm trước hiến máu không nên thức quá khuya (ngủ ít nhất 6 tiếng)."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nên ăn nhẹ, không ăn các đồ ăn có nhiều đạm, nhiều mỡ."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Không uống rượu, bia. Nên uống nhiều nước."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mang theo giấy tờ tùy thân khi đi hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. Cần lưu ý gì sau khi hiến máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uống nhiều nước, chỉ rời điểm hiến máu khi thực sự thoải mái."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giữ chế độ ăn uống, sinh hoạt bình thường; tăng cường sử dụng các chất dinh dưỡng bổ máu: thịt, gan, trứng, sữa, dùng thêm các thuốc bổ máu nếu có thể."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trong 3 ngày sau hiến máu: tránh các hoạt động đòi hỏi nhiều thể lực như: thi đấu thể thao, đá bóng, tập thể hình, leo trèo cao...; không thức khuya, không uống rượu, bia."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. Mỗi lần có thể hiến bao nhiêu máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mỗi người khỏe mạnh mỗi lần hiến không quá 9ml/kg cân nặng. Người có cân nặng từ 45-50kg có thể hiến 350ml máu toàn phần, người từ 50kg trở leencos thể hiến 450ml máu toàn phần"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. Hiến máu có làm tăng cân?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thực tế: Hiến máu giúp giảm cân - người hiến máu có thể tiêu tốn 650-700Kcal trong một lần hiến máu. Cân nặng của người hiến có liên quan tới hấp thu calo và vì vậy, hiến máu có thể hỗ trợ kiểm soát cân nặng."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Việc hiến máu có thể giúp ăn ngon hơn, ngủ tốt hơn; do đó người hiến máu có thể tăng cân nhẹ do chế độ ăn uống, sinh hoạt, chứ không phải nguyên nhân trực tiếp là do hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. Trước khi hiến máu có cần nhịn ăn?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bạn không cần nhịn ăn trước khi tham gia hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nên ăn nhẹ trước buổi hiến máu, hạn chế đồ ăn có nhiều đạm, mỡ."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặc biệt cần uống nhiều nước (khoảng >=300ml)."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. Quyền lợi của người hiến máu?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Được khám, tư vấn sức khỏe, được kiểm tra các xét nghiệm: huyết sắc tố, viêm gan B ngay trước khi hiến máu."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Được bồi dưỡng trực tiếp (theo Thông tư 20/2018/TT-BYT ngày 30 tháng 8 năm 2018 của Bộ Y Tế):"
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Phục vụ ăn uống tại chỗ: 30.000 đồng."
+            android:layout_marginLeft="35dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Hỗ trợ chi phí đi lại: 50.000 đồng."
+            android:layout_marginLeft="35dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Lựa chọn nhận quà bằng hiện vật hoặc bằng gói xét nghiệm có giá trị như sau: Một đơn vị máu thể tích 250l: 100.000 đồng; Một đơn vị máu thể tích 350ml: 150.000 đồng; Một đơn vị máu thể tích 450ml: 180.000đồng."
+            android:layout_marginLeft="35dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhận giấy chứng nhận hiến máu tình nguyện: ngoài giá trị về mặt tôn vinh, giấy chứng nhận hiến máu có giá trị bồi hoàn máu, số lượng máu được bồi hoàn lại tối đa bằng lượng máu người hiến máu đã hiến. Giấy chứng nhận này có giá trị tại các bệnh viện, các cơ sở y tế công lập trên toàn quốc."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Được xét nghiệm nhóm máu (hệ ABO và hệ Rh), xét nghiệm các virut lây qua đường truyền máu: HIV, viêm gan B, viêm gan C, giang mai và sốt rét. Kết quả xét nghiệm sẽ được thông báo cho người hiến máu qua tin nhắn."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Được tôn vinh, biểu dương theo quy định."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11. Hiến máu thường xuyên mang lại lợi ích gì cho sức khỏe?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kiểm tra định kì, theo dõi sc khỏe: Hiến máu là một cách giúp người hiến máu tự giám sát sức khỏe, trước khi hiến máu người hiến sẽ được kiểm tra mạch, huyết áp."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mỗi lần hiến máu là một lần gửi máu vào ngân hàng máu: khi người hiến máu cần nhận áu, họ sẽ được bồi hoàn máu miễn phí, đây là một cách 'bảo hiểm' cho sức khỏe."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiến máu giúp tinh thần thoải mái: Hiến máu đem lại cho bạn cảm giác tuyệt vời vì hành động của bạn có thể cứu gúp tính mạng của ai đó. Phần máu của bạn đực tách thành nhều thành phần theo nhu cầu của bệnh nhân và có thể được truyền cho những người nhận khác nhau."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiến máu giúp làm giảm quá tải sắt trong cơ thể: Theo các nghiên cứu, hiến máu làm giảm lượng sắt dư thùa và những người hiến máu thường xuyên sẽ giảm quá tải sắt trong cơ thể."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiến máu giúp giảm cân: Bạn có thể tiêu tốn khoảng 650 calo trong một lần hiến máu. Cân nặng của bạn có liên quan tới hấp thụ calo. Vì vậy, hiến máu có thể hỗ trợ kiểm soát cân nặng."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiến máu làm giảm nguy cơ xuất hiện đột quỵ, tim mạch: Sắt là thành phần gây ra các mảng xơ vữa, lượng sắt dư thùa là một trong những tác nhân gây ra các bệnh lý tim mạch. Việc hiến máu khi tuổi còn trẻ sẽ góp phần giảm ứ đọng sắt, nhờ đó giúp giảm tỉ lệ các cơn đột quỵ tim mạch."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12. Hiến máu có hại cho sức khỏe không?"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thực tế: Hiến máu theo đúng hướng dẫn của thầy thuốc không có hại tới sức khỏe, điều đó được giải thích bằng cơ sở khoa học và thực tế."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13. Việc lấy máu được thực hiện theo đúng hướng dẫn, quy định"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuân thủ đúng các quy định như: đủ tuổi, đủ cân nặng; khoảng thời gian giữa 2 lần hiến máu..."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người hiến máu có nhận thức cơ bản về hiến máu tình nguyện, hiến máu trên co sở tự nguyện, không có vụ lợi, không sức ép."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14. Việc lấy máu được tuân thủ đúng các quy định y tế và phù hợp với các cơ sở khoa học"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Người hiến máu chỉ được tham gia sau khi được khám, xét nghiệm và được khẳng định đủ tiêu chuẩn hiến máu (đáp ứng được các yêu cầu về mạch, huyết áp, lượng huyết sắc tố)."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lượng máu hiến: Mỗi lần hiến dưới 9ml máu/kg không ảnh hưởng tới sức khỏe. Lượng máu trong cơ thể mỗi người tỉ lệ thuận với trọng lượng (khoảng 70ml máu/kg cân nặng). Ví dụ, một người 45kg có khẳng trên 3000ml máu và có thể hiến tới 350ml."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cơ thể có khả năng bù trừ rất tốt: tủy xương sinh máu gấp 4-10 lần co với bình thường, huy động lượng máu được dự trữ từ lách, cơ ổn định huyết động."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u25BA"
+                android:layout_marginLeft="35dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rất nhiều các công trình ngiên cứu khoa học trên TG đa chứng minh, hiến máu không có hại cho sức khỏe."
+                android:layout_marginLeft="10dp"
+                android:textSize="14dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

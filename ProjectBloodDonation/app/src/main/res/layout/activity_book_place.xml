@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookPlace_Activity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt lịch"
+        android:fontFamily="@font/baloo"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:background="#D61010"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C5B9B9"
+        android:layout_below="@+id/header_title"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/design_button"
+        android:text="Đặt lịch hiến máu"
+        android:textStyle="bold"
+        android:onClick="MoveBook"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

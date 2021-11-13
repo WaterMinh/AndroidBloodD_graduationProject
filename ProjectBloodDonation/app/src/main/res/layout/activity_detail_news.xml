@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DetailNewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/detailImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/detailTieuDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ứng dụng công nghệ thông tin đẩy mạnh vận động hiến máu tình nguyện"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-09-2021"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/detailThongTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Trong tình hình dịch bệnh Covid-19 diễn biến phức tạp ảnh hưởng đến hoạt động của phong trào hiến máu tình nguyện trên cả nước, Ban Chỉ đạo vận động hiến máu tình nguyện Thành phố đã chỉ đạo Trung tâm hiến máu nhân đạo Thành phố phối hợp Bệnh viện Truyền máu Huyết học thực hiện tốt công tác phòng chống dịch song song với tổ chức tiếp nhận máu tại 2 điểm hiến máu cố định và các điểm hiến máu lưu động trên địa bàn Thành phố đáp ứng yêu cầu dự trữ nguồn máu cho cấp cứu và điều trị tại các bệnh viện trong Thành phố và khu vực."
+            android:textSize="18dp" />
+    </LinearLayout>
+</ScrollView>
